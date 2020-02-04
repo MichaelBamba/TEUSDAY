@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>maddening mad lib</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+  
+    <label> Name
+        <input type="text" id="name" value="" />
+    </label>
+    <label> Verb
+        <input type="text" id="verb" value="" />
+
+    </label>
+    <label> noun
+        <input type="text" id="noun" value="" />
+    </label>
+
+    <button type="button" id="clickMe">Start</button>
+    <p> <span id= "name1">_____</span> once <span id ="verb1">______</span> a <span id="noun1">_____</span></p>
+    <script> 
+        const button = document.getElementById("clickMe");
+        const name1 = document.getElementById("name1");
+        const verb1 = document.getElementById("verb1");
+        const noun1 = document.getElementById("noun1");
+        const noun = document.getElementById("noun");
+        const verb = document.getElementById("verb");
+        const name = document.getElementById("name");
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            console.log('clicked')
+            noun1.innerHTML = ` ${noun.value}`;
+            name1.innerHTML = ` ${name.value}`;
+            verb1.innerHTML = ` ${verb.value}`;
+        });
+
+            </script>
+    <p> 
+</body>
+
+</html>
